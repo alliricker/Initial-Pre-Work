@@ -1,0 +1,22 @@
+/* Browsers read CSS from top to bottom. If there is a conflict, the browser will use whichever CSS declaration came last. However, you can override CSS with id attributes. In this example, h1 is given the id attribute orange-text that will override the green, blue, and pink text. The CSS declaration for orange-text can be placed above or below the pink-text attribute in the style element, the order will not matter in this case as id attribute will always take precedence. */
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+
+  #orange-text {
+    color: orange;
+  }
+
+</style>
+
+<h1 class="pink-text blue-text" id="orange-text">Hello World!</h1>

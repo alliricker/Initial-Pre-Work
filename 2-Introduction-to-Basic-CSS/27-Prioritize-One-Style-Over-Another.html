@@ -1,0 +1,13 @@
+/* One element cannot be multiple styles that conflict with one another - such as two different colors. In this example, h1 is given a class pink-text in additon to color: green in the body element. The pink-text overrides the green text. */
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+</style>
+<h1 class ="pink-text">Hello World!</h1>

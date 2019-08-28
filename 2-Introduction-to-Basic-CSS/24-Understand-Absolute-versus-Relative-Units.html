@@ -1,0 +1,37 @@
+/* Pixels are a unit of length. CSS has numerous lengit unit options, including px, in, and mm. Absolute length units may vary depending on screen resolution. Relative units (em, rem) are relative to another length value. em is based on the size of an element's font. You can use it to set the font-size property itself, it will be relative to the parent's font-size. In this example, I set the padding property to the element with class red-box and set it to 1.5em. */
+
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 20px 40px 20px 40px;
+  }
+
+  .red-box {
+    background-color: red;
+    margin: 20px 40px 20px 40px;
+    padding: 1.5em;
+  }
+
+  .green-box {
+    background-color: green;
+    margin: 20px 40px 20px 40px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+</div>

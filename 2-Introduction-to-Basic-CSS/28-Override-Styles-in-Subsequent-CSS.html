@@ -1,0 +1,16 @@
+/* To override the pink text, add an additional CSS class blue-text below the pink-text declaration. Applying multiple class attributes is donw with a space in between them - class="class1 class2". It doesn't matter which order the classes are listed in the HTML element, but the order of the class declarations in the <style> section is important. The second declaration will always override the first, in this case .blue-text will override .pink-text as it is declared second. */
+
+  <style>
+ body {
+   background-color: black;
+   font-family: monospace;
+   color: green;
+ }
+ .pink-text {
+   color: pink;
+ }
+ .blue-text{
+   color: blue;
+ }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>

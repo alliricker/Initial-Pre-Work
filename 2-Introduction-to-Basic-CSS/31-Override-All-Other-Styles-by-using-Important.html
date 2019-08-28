@@ -1,0 +1,19 @@
+/* The last way to override CSS is the most powerful. If you use CSS libraries, some of your own CSS may encounter overrides. If you need to make sure that an element has a different, specific CSS, use !important. Adding !important to the pink-text element declaration in the style element will override all of the other declarations. h1 will now be pink. */
+
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink !important;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>

@@ -1,0 +1,14 @@
+/* It is common to run into browser compatability issues with CSS. It is important to use fallbacks because any properties that are not recognized or supported will be ignored. If fallbacks are not defined, a browser will revert to the default value, which is typically not ideal. Providing a fallback is as easy as adding another more widely supported value right before the declaration. In this example, another background value is added right before the existing declaration. */
+
+<style>
+  :root {
+    --red-color: red;
+  }
+  .red-box {
+    background: red;
+    background: var(--red-color);
+    height: 200px;
+    width:200px;
+  }
+</style>
+<div class="red-box"></div> 
