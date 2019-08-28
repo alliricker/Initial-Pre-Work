@@ -1,0 +1,26 @@
+/* The justify-content property has several options to align and space out flex items in a specific way. The direction that flex items are arranged is called the main axis. This is a horizontal line for a row and a vertical line for a column. This line cuts through each item. Commonly used is justify-content: center; which aligns all items to the center inside the flex container. flex-start aligns to the start of the flex container (row- left, column- top) flex-end aligns items to the end of a flex container (row- right, column- bottom) space-between aligns items to the center of the main axis (row- first item on left, last item on right with all other items spaced evenly) and space-around distibutes space evenly around all items. In this example, justify-content set to center will make four even columns of colors. */
+
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 100%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 100%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>

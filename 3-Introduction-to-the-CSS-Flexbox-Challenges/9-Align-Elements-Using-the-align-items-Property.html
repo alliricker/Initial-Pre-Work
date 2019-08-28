@@ -1,0 +1,27 @@
+/* The align-items property is similar to the justify-content property. The align-items property will align flex items along the cross axis. For a row it will push items in the entire row up or down within the container. For a column it will push all of the items left or right within the container. Values include flex-start (aligns to start of flex container, rows - top, columns - left) flex-end (alignts to end of the flex container, rows- bottom, columns - right) center (rows- vertical align, columns- horizontal align) stretch (fills flex container) and baseline (aligns to baseline). In this example, adding the align-items property to the #box-container element with a value of center will center the boxes vertically. */
+
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    align-items: center;
+
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 200px;
+    font-size: 24px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 200px;
+    font-size: 18px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"><p>Hello</p></div>
+  <div id="box-2"><p>Goodbye</p></div>
+</div>
